@@ -1,0 +1,23 @@
+<div class="form-container">
+    <form id="customer-form" [formGroup]="postCustomerForm">
+        <h2>Customer Information</h2>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" formControlName="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" formControlName="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" formControlName="phone" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" (click)="postCustomer()">Add New Customer</button>
+        </div>
+        <div class="form-group">
+            <button type="submit" (click)="getCustomer()">Home Page</button>
+        </div>
+    </form>
+</div>
