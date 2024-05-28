@@ -37,7 +37,7 @@ export class UpdateCustomerComponent implements OnInit {
       this.updateCustomerForm.patchValue(res);
     })
   }
-
+//get
   getCustomer(): void {
     this.router.navigateByUrl("/");
   }
